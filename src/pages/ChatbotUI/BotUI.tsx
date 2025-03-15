@@ -60,7 +60,7 @@ import { Terminal } from "lucide-react";
       setLoading(true);
       setReview("");
       try {
-        const response = await axios.post("https://backed-ai.vercel.app/ai/get-review", { code });
+        const response = await axios.post("https://backedai-production.up.railway.app/ai/get-review", { code });
         setReview(response.data);
       } catch (error) {
         setReview("⚠️ Error: Failed to get review. Please try again.");
