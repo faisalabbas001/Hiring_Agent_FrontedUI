@@ -38,7 +38,7 @@ const Compile = () => {
   const executeCode = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:3000/ai/execute-code", {
+      const response = await axios.post("https://backed-ai.vercel.app/ai/execute-code", {
         code,
         language,
       });
