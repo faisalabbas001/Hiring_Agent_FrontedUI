@@ -5,7 +5,7 @@ const ExampleComponent = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'An intelligent AI-powered assistant for code review and generation. 🚀',
+        ' ✨ ✨  An intelligent AI-powered assistant for code review and generation. 🚀',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
         'corrections and improvements ✨ ✨ ',
         1000,

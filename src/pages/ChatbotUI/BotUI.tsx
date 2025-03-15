@@ -14,6 +14,7 @@ import imageSrc from "/profile.png";
 import Accordion  from "../../components/ui/Accordion";
 import {  useNavigate } from "react-router-dom"; 
 import { Terminal } from "lucide-react";
+import ExampleComponent  from  "../../components/ui/TypeAnimation";
  // Make sure you have this import  
  const BotUI = () => {
 
@@ -93,6 +94,8 @@ import { Terminal } from "lucide-react";
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col rounded-xl h-full w-full overflow-hidden">
         {/* Header */}
         <div className="border-b p-4 flex items-center justify-between flex-wrap">
+           
+            <ExampleComponent/>
           <button className="md:hidden p-2" onClick={() => setSidebarOpen(true)}>
             <Menu size={24} />
           </button>
